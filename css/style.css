@@ -1,0 +1,303 @@
+:root {
+    --primary: #EB1CCC;
+    --secondary: #95989A;
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Event form */
+
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), 
+    url("../img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#disclaimer > h2,
+#disclaimer > .event-date {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+#disclaimer > h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer > .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer > p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    color: var(--text-secondary);
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5em;
+    max-width: 25%;
+}
+
+form > .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+
+form > .btn {
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: .6em;
+    padding: 10px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > .btn:hover {
+    background-color: #eb1ccc88;
+    transition: 5s;
+}
+
+form > .form-group > label{
+    font-size: .6em;
+    font-weight: bold;
+    color: var(--text-tertiary);
+    margin-bottom: 3px;
+    
+}
+
+form > .form-group > input, select{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+#subscription-form > p {
+    margin-bottom: 20px;
+}
+
+/* Benefits section */
+#benefits > h2 {
+    background-color: var(--secondary);
+    padding: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10em;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    text-align: center;
+    align-items: center;
+    color: var(--text-tertiary);
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #95989A;
+    background-size: cover;
+    background-position: center;
+}
+
+.benefit-img {
+    margin-bottom: 2em;
+}
+
+#benefit-1 {
+    background-image: url(../img/sqr-1.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../img/sqr-2.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../img/sqr-3.jpg);
+}
+
+/* Event location */
+#location {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
+    url(../img/hrz-1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+#address {
+    font-size: 1.5em;
+}
+
+#about-location {
+    max-width: 33%;
+}
+
+#about-location h3{
+    color: var(--primary);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding-bottom: .5em;
+}
+
+#course-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-imgs{
+    height: 350px;
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.details {
+    display: flex;
+    margin-bottom: 5em;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#paragraph1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    max-width: 350px;
+    padding-left: 2em;
+
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 2em;
+}
+
+.about-details p {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.about-details ul {
+    padding-top: 1em;
+}
+
+.about-details li {
+    margin-left: 1em;
+    padding-bottom: .5em;
+}
+
+#detail-img1{
+    background-image: url(../img/hrz-3.jpg);
+}
+
+#detail-img2{
+    background-image: url(../img/hrz-4.jpg);
+}
+
+#detail-img3{
+    background-image: url(../img/hrz-5.jpg);
+}
+
+#subscription-section {
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/hrz-6.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--text-color);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#subscription-section button {
+    background-color: var(--primary);
+    font-size: .6em;
+    color: var(--text-color);
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    margin-top: 1.5em;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#subscription-section button:hover {
+    background-color: #eb1ccc88;
+    transition: 1.5s;
+}
+
+footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #95989A;
+}
+
+#footer-contacts {
+    width: 400px;
+    text-align: center;
+}
+
+#footer-subparagraph {
+    padding: 1em;
+}
+
+#footer-contacts h3 {
+    font-size: 1.5em;
+    color: #95989A;
+}
