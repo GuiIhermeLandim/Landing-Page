@@ -194,7 +194,7 @@ form > .form-group > input, select{
 
 .detail-imgs{
     height: 350px;
-    width: 500px;
+    width: 50%;
     background-size: cover;
     background-position: center;
 
@@ -208,10 +208,10 @@ form > .form-group > input, select{
 }
 
 #paragraph1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
-    max-width: 350px;
     padding-left: 2em;
+    max-width: 500px;
 
 }
 
@@ -300,4 +300,110 @@ footer{
 #footer-contacts h3 {
     font-size: 1.5em;
     color: #95989A;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: .5em;
+    }
+
+    #subscription-form {
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefits */
+
+    .benefits {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 5em;
+        padding-bottom: 5em;
+
+    }
+
+    .benefit  {
+        max-width: 80%;
+        padding-bottom: 2em;
+    }
+
+    /* Location */
+
+    #location {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #address {
+        margin: 0;
+        padding: 2em;
+        padding-top: 0;
+        order: 2;
+    }
+
+    #about-location {
+        padding-top: 2em;
+        max-width: 80%;
+        order: 1;
+        text-align: center;
+
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /* Course Details */
+
+    #course-details {
+        margin-bottom: 2em;
+    }
+
+    .details {
+        flex-direction: column;
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+
+    .detail-imgs {
+        width: 100%;
+    }
+
+    #paragraph1 {
+        padding: 0;
+        padding-bottom: 1em;
+        order: 1;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    #detail-img1, #detail-img2, #detail-img3 {
+        order: 2;
+    }
+
+    .about-details {
+        order: 1;
+    }
+
+    /* subscription-section */
+
+    #subscription-box {
+        width: 80%;
+    }
+
+    #subscription-box p {
+        text-align: center;
+    }
 }
